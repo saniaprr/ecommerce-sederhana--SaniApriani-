@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>oseanic_ | Thrift Vintage Store</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
+<title>oseanic_ | Thrift Vintage Store</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +77,6 @@ nav a:hover {
 }
 
 .hero p {
-    font-family: 'Playfair Display', serif;
     font-style: italic;
     margin: 15px 0;
 }
@@ -106,7 +100,6 @@ nav a:hover {
     margin: 0 10px;
     color: #f5efe6;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
 }
 
 .kategori a:hover {
@@ -150,7 +143,6 @@ nav a:hover {
     font-size: 14px;
     color: #5a4a3b;
     margin: 8px 0;
-    line-height: 1.4;
 }
 
 .harga {
@@ -178,86 +170,62 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
-</style>
-
-</head>
-
-<body>
-
-<div class="bg-vintage"></div>
-<div class="overlay-dark"></div>
-
-<header>
+</style></head><body><div class="bg-vintage"></div>
+<div class="overlay-dark"></div><header>
 <nav>
 <div class="logo">oseanic_</div>
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Produk</a></li>
-<li><a href="#">Kategori</a></li>
-<li><a href="#">Keranjang</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#produk">Produk</a></li>
+<li><a href="#kategori">Kategori</a></li>
+<li><a href="#keranjang">Keranjang</a></li>
 </ul>
 </nav>
-</header>
-
-<section class="hero">
+</header><section id="home" class="hero">
 <h1>Welcome to oseanic_ Thrift Store</h1>
 <p>"Timeless style, second-hand stories."</p>
-<button>Shop Now</button>
-</section>
-
-<section class="kategori">
-<a href="#">All</a>
-<a href="#">Jacket</a>
-<a href="#">Jeans</a>
-<a href="#">Accessories</a>
-</section>
-
-<section class="produk-container">
-
-<div class="produk">
+<button id="shopBtn">Shop Now</button>
+</section><section id="kategori" class="kategori">
+<a href="#produk">All</a>
+<a href="#produk">Jacket</a>
+<a href="#produk">Jeans</a>
+<a href="#produk">Accessories</a>
+</section><section id="produk" class="produk-container"><div class="produk">
 <img src="leather-jacket.jpg" alt="Leather Jacket">
 <h3>Leather Jacket</h3>
-<p class="deskripsi">Jaket berbahan kulit sintetis premium dengan lapisan dalam lembut, tahan angin dan cocok untuk gaya vintage klasik.</p>
+<p class="deskripsi">Jaket kulit sintetis premium dengan lapisan lembut, cocok untuk gaya vintage klasik.</p>
 <p class="harga">Rp 129.000</p>
-<button>Tambah ke Keranjang</button>
-</div>
-
-<div class="produk">
+<button class="btn">Tambah ke Keranjang</button>
+</div><div class="produk">
 <img src="blue-jeans.jpg" alt="Blue Jeans 04">
 <h3>Blue Jeans 04</h3>
-<p class="deskripsi">Celana berbahan denim tebal berkualitas tinggi dengan potongan straight fit, nyaman dipakai dan tahan lama.</p>
+<p class="deskripsi">Denim tebal berkualitas tinggi, nyaman dan tahan lama.</p>
 <p class="harga">Rp 95.000</p>
-<button>Tambah ke Keranjang</button>
-</div>
-
-<div class="produk">
+<button class="btn">Tambah ke Keranjang</button>
+</div><div class="produk">
 <img src="vintage-hat.jpg" alt="Vintage Hat">
 <h3>Vintage Hat</h3>
-<p class="deskripsi">Topi berbahan wol blend dengan desain klasik, ringan dan memberikan sentuhan aesthetic pada outfit.</p>
+<p class="deskripsi">Topi wol dengan desain klasik dan aesthetic vintage.</p>
 <p class="harga">Rp 56.000</p>
-<button>Tambah ke Keranjang</button>
-</div>
-
-<div class="produk">
+<button class="btn">Tambah ke Keranjang</button>
+</div><div class="produk">
 <img src="friendship-bracelet.jpg" alt="Friendship Bracelet">
 <h3>Friendship Bracelet</h3>
-<p class="deskripsi">Gelang handmade dari benang manik-manik unik, cocok untuk gaya kasual sehari-hari.</p>
+<p class="deskripsi">Gelang handmade unik untuk gaya kasual sehari-hari.</p>
 <p class="harga">Rp 25.000</p>
-<button>Tambah ke Keranjang</button>
-</div>
-
-</section>
-
-<footer>
+<button class="btn">Tambah ke Keranjang</button>
+</div></section><footer id="keranjang">
 <p>Kontak: halo@oseanic.id | +62 812 3456 7890</p>
 <p>© 2026 oseanic_. All Rights Reserved.</p>
-</footer>
-<script>
-document.querySelectorAll("button").forEach(btn => {
+</footer><script>
+document.querySelectorAll(".btn").forEach(btn => {
   btn.addEventListener("click", () => {
     alert("Produk berhasil ditambahkan ke keranjang!");
   });
 });
-</script>
-</body>
+
+document.getElementById("shopBtn").onclick = () => {
+  document.getElementById("produk").scrollIntoView({behavior: "smooth"});
+};
+</script></body>
 </html>
