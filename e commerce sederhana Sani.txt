@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>oseanic_ | Thrift Vintage Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2b1e12;
+    color: #f5efe6;
+}
+
+/* BACKGROUND */
+.bg-vintage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/9963299/pexels-photo-9963299.jpeg') center/cover no-repeat;
+    z-index: -2;
+}
+
+.overlay-dark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(30,20,12,0.75);
+    z-index: -1;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #000, #7B1E1E);
+    padding: 15px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c49a6c;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+.hero p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+.hero button {
+    background: #7B1E1E;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* KATEGORI */
+.kategori {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.kategori a {
+    margin: 0 10px;
+    color: #f5efe6;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.kategori a:hover {
+    border-bottom: 2px solid #c49a6c;
+}
+
+/* PRODUK */
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.produk {
+    background: #f5efe6;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #c49a6c;
+    transition: 0.3s;
+}
+
+.produk:hover {
+    transform: scale(1.05);
+}
+
+.produk img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produk h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+}
+
+.deskripsi {
+    font-size: 14px;
+    color: #5a4a3b;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.harga {
+    color: #7B1E1E;
+    font-weight: bold;
+}
+
+.produk button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.produk button:hover {
+    background: #7B1E1E;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="bg-vintage"></div>
+<div class="overlay-dark"></div>
+
+<header>
+<nav>
+<div class="logo">oseanic_</div>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Produk</a></li>
+<li><a href="#">Kategori</a></li>
+<li><a href="#">Keranjang</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome to oseanic_ Thrift Store</h1>
+<p>"Timeless style, second-hand stories."</p>
+<button>Shop Now</button>
+</section>
+
+<section class="kategori">
+<a href="#">All</a>
+<a href="#">Jacket</a>
+<a href="#">Jeans</a>
+<a href="#">Accessories</a>
+</section>
+
+<section class="produk-container">
+
+<div class="produk">
+<img src="https://via.placeholder.com/200" alt="Leather Jacket">
+<h3>Leather Jacket</h3>
+<p class="deskripsi">Jaket berbahan kulit sintetis premium dengan lapisan dalam lembut, tahan angin dan cocok untuk gaya vintage klasik.</p>
+<p class="harga">Rp 129.000</p>
+<button>Tambah ke Keranjang</button>
+</div>
+
+<div class="produk">
+<img src="https://via.placeholder.com/200" alt="Blue Jeans 04">
+<h3>Blue Jeans 04</h3>
+<p class="deskripsi">Celana berbahan denim tebal berkualitas tinggi dengan potongan straight fit, nyaman dipakai dan tahan lama.</p>
+<p class="harga">Rp 95.000</p>
+<button>Tambah ke Keranjang</button>
+</div>
+
+<div class="produk">
+<img src="https://via.placeholder.com/200" alt="Vintage Hat">
+<h3>Vintage Hat</h3>
+<p class="deskripsi">Topi berbahan wol blend dengan desain klasik, ringan dan memberikan sentuhan aesthetic pada outfit.</p>
+<p class="harga">Rp 56.000</p>
+<button>Tambah ke Keranjang</button>
+</div>
+
+<div class="produk">
+<img src="https://via.placeholder.com/200" alt="Friendship Bracelet">
+<h3>Friendship Bracelet</h3>
+<p class="deskripsi">Gelang handmade dari benang manik-manik unik, cocok untuk gaya kasual sehari-hari.</p>
+<p class="harga">Rp 25.000</p>
+<button>Tambah ke Keranjang</button>
+</div>
+
+</section>
+
+<footer>
+<p>Kontak: halo@oseanic.id | +62 812 3456 7890</p>
+<p>© 2026 oseanic_. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
